@@ -2,7 +2,7 @@
   "name": "node-uber-driver",
   "version": "1.0.0",
   "description": "A library that helps who wants to use Uber API with fast and easy methods ✨",
-  "main": "node-uber-driver.js",
+  "main": "lib/node-uber-driver.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
