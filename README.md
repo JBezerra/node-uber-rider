@@ -1,5 +1,5 @@
- [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org) [![build status](https://img.shields.io/travis/JBezerra/node-uber-rider.svg?style=flat-square)](https://travis-ci.org/JBezerra/node-uber-rider)
- 
+ [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org) [![build status](https://img.shields.io/travis/JBezerra/node-uber-rider.svg?style=flat-square)](https://travis-ci.org/JBezerra/node-uber-rider) [![semantic-release]( https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/JBezerra/node-uber-rider)
+
 # A library to use Uber Riders' API faster and easily for Node.js
 This project contains all endpoints you need to integrate Uber's API in your application
 
