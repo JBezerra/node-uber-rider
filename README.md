@@ -26,7 +26,7 @@ Next, initialize the Uber object with the keys you obtained from the [Uber devel
 var uber = new Uber({
   clientID: 'CLIENT_ID',
   clientSecret: 'CLIENT_SECRET',
-  redirectURI: 'REDIRECT_URI/getCode',
+  redirectURI: 'REDIRECT_URI',
   
   //If you already have the authentication infos (they are all optional)
   access_token: 'SERVER_TOKEN',
@@ -48,7 +48,7 @@ To do so, you are initially required to redirect your user to an authorization U
 
 ```javascript
 app.get('/getAuth', function(req,res){
-    var url = myUber.getAuthorizeUrl(['history','profile','all_trips']);
+    var url = uber.getAuthorizeUrl(['history','profile','all_trips']);
     res.redirect(url);
 });
 ```
@@ -64,7 +64,7 @@ Using Express, you could achieve that as follows:
 ```javascript
 app.get('/getCode', function(req, res){
     code = req.query.code;
-    var token = myUber.getUserToken(code,['history','profile','all_trips'],function(err,data){
+    var token = uber.getUserToken(code,['history','profile','all_trips'],function(err,data){
         if(err)
         {
             console.log(err);
@@ -103,7 +103,7 @@ uber.getUserToken(UserCode,[scopes],callback);
 ##### Example: Just getting access_token
 
 ```javascript
-myUber.getUserToken(code,['history','profile','all_trips'],function(err,token){
+uber.getUserToken(code,['history','profile','all_trips'],function(err,token){
   if(err){
     console.log(err);
    }
@@ -114,7 +114,7 @@ myUber.getUserToken(code,['history','profile','all_trips'],function(err,token){
 ##### Example 2: Getting refresh_token
 
 ```javascript
-myUber.getUserToken(code,['history','profile','all_trips'],function(err,token){
+uber.getUserToken(code,['history','profile','all_trips'],function(err,token){
   if(err){
     console.log(err);
    }
