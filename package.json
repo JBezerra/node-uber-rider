@@ -1,0 +1,42 @@
+{
+  "name": "node-uber-rider",
+  "version": "0.0.0-development",
+  "description": "A library that helps who wants to use Uber API with fast and easy methods ✨",
+  "main": "lib/node-uber-rider.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "mocha test/test.js --slow 1000 -w",
+    "test:single": "mocha test/test.js --slow 1000",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JBezerra/node-uber-driver.git"
+  },
+  "keywords": [
+    "uber",
+    "uber-api",
+    "driver-api"
+  ],
+  "author": "José Bezerra <josebezerraneto@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JBezerra/node-uber-driver/issues"
+  },
+  "homepage": "https://github.com/JBezerra/node-uber-driver#readme",
+  "dependencies": {
+    "request": "2.85.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.1.0",
+    "mocha": "5.1.1",
+    "semantic-release": "^15.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  }
+}
