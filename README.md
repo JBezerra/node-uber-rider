@@ -9,7 +9,7 @@ Before begin, you need to register your app in the [Uber developer dashboard](ht
 After registering your application, you need to install this module in your Node.js project:
 
 ```sh
-npm install node-uber-driver
+npm install node-uber-rider
 ```
 
 ## Initialization
